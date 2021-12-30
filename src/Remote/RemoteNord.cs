@@ -117,10 +117,10 @@ namespace NordVPNdotnet.Remote
                     stopwatch.Start();
                     NordWait wait = new NordWait(this,timeout);
                     info.isConnected = wait.Until(x => x.IsConnected);
-                    if(Untils.CurrentIp == CurrentIp || string.IsNullOrEmpty(CurrentIp))
-                    {
-                        info.isConnected = false;
-                    }
+                    //if(Untils.CurrentIp == CurrentIp || string.IsNullOrEmpty(CurrentIp))
+                    //{
+                        //info.isConnected = false;
+                    //}
                 }
                 catch(Exception ex)
                 {
